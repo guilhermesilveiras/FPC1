@@ -1,5 +1,5 @@
-coord1 = [int(i) for i in input().split()]
-coord2 = [int(i) for i in input().split()]
+coord1 = [int(i) for i in input('').split()]
+coord2 = [int(i) for i in input('').split()]
 
 
 
