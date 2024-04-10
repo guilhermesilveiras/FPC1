@@ -1,28 +1,26 @@
-count = 0
-def G(contador):
-    global count
-    count += contador
-    return count
-
-
-def f(n):
-    while n != 1:
-        if n%2 == 0:
-            G(1)
-            return f(n/2)
-        elif n%2 != 0:
-            G(1)
-            return f(3*n+1)
+def F(n):
     if n == 1:
-        return G(0)
-        
-T = int(input("Digite o número de casos: "))
-casos = [int(x) for x in input().split()]
-
-for i in range(T):
-    if f(casos[2*i]) > f(casos[2*i+1]):
-        print(f'Caso {i+1}: {f(casos[2*i])}')
+        return 1
+    elif n % 2 == 0:
+        return F(n/2) + 1
     else:
-        print(f'Caso {i+1}: {f(casos[2*i+1])}')
+        return F(3 * n + 1) + 1
+
+def G(n):
+    return F(n)
+
+T = int(input())
+casos_teste = []
+
+for x in range(T):
+    A, B = input().split()
+    casos_teste += [(int(A), int(B))]
+for A, B in casos_teste:
+    max_chamadas = 0
+    for i in range(A, B + 1):
+        chamadas = G(i)
+        if chamadas > max_chamadas:
+            max_chamadas = chamadas
+    print(f"Caso {x+1} : {max_chamadas}")
 
 
