@@ -17,14 +17,14 @@
 # Restrições
 # • 0 ≤ D ≤ 2000
 
-D = int(input(''))
-if D <= 800:
+D = int(input('')) # Coletando valor da distância
+if D <= 800: # Verificando se D é menor que 800
     print('1')
-elif 800 < D <= 1400:
+elif 800 < D <= 1400: # Verificando se D está entre 800 e 1400
     print('2')
-elif 1400 < D <= 2000:
+elif 1400 < D <= 2000: # Verificando se D está entre 1400 e 2000
     print('3')
 else:
-    print('Error')
+    print('Error') # Erro se o valor de D está fora dos parâmetros observados
 
 

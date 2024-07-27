@@ -14,23 +14,23 @@
 area1 = 0
 area2 = 0
 
-for i in range(1, 2):
-    x = int(input(''))
+for i in range(1, 2): # Incicializando coleta de valores para área 1
+    x = int(input('')) # Calculando valores de dimensão e largura
     y = int(input(''))
     if x < 1 or x > 100 or y < 1 or y > 100:
         print('Error')
         break
-    area1 = x * y
+    area1 = x * y # Calculando área total
 
-for j in range(1, 2):
-    x = int(input(''))
+for j in range(1, 2): # Inicializando coleta de valores para a área 2
+    x = int(input('')) # Calculando valores de dimensão e largura
     y = int(input(''))
     if x < 1 or x > 100 or y < 1 or y > 100:
         print('Error')
         break
-    area2 = x * y
+    area2 = x * y # Calculando área total
 
-if area1 > area2:
+if area1 > area2: #Verificando qual é a maior área
     print(area1)
 else:
     print(area2)

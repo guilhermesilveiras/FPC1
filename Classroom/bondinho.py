@@ -10,10 +10,10 @@
 # • 1 ≤ A ≤ 50
 # • 1 ≤ M ≤ 50
 
-A = int(input(''))
-M = int(input(''))
+A = int(input('')) # Recebendo quantidade de alunos
+M = int(input('')) # Recebendo quantidade de monitores
 
-if A + M > 50:
+if A + M > 50: # Verificando se o número é maior que o permitido
     print('N')
 else:
     print('S')

@@ -16,18 +16,18 @@
 # • 1 ≤ X ≤ N
 
 
-totalFigurinhas = int(input(''))
-figurinhasCompradas = int(input(''))
-listaFigurinhas = []
+totalFigurinhas = int(input(''))   # descobrindo o total de figurinhas
+figurinhasCompradas = int(input(''))    # descobrindo o total de figurinhas compradas
+listaFigurinhas = []   # inicializando uma lista de figurinhas
 
 for i in range(figurinhasCompradas):
-    figurinhas = int(input(''))
-    listaFigurinhas.append(figurinhas)
+    figurinhas = int(input(''))   # descobrindo qual é o número X das figurinhas que compramos
+    listaFigurinhas.append(figurinhas)    # adicionando as figurinhas a nossa lista de figurinhas
 
-listaFigurinhasUnicas = []
-for figurinha in listaFigurinhas:
-    if figurinha not in listaFigurinhasUnicas:
-        listaFigurinhasUnicas.append(figurinha)
-quantidadeUnicas = len(listaFigurinhasUnicas)
+listaFigurinhasUnicas = []    # inicializando uma lista de figurinhas únicas
+for figurinha in listaFigurinhas:     # atribuindo uma variável iteradora que vai percorrer nossa lista de figurinhas
+    if figurinha not in listaFigurinhasUnicas:   # adicionando figurinhas que não estão na lista de figurinhas únicas a partir de nossa lista de figurinhas original
+        listaFigurinhasUnicas.append(figurinha)  
+quantidadeUnicas = len(listaFigurinhasUnicas)   # descobrindo a quantidade de figurinhas únicas que temos
 
-print(totalFigurinhas - quantidadeUnicas)
+print(totalFigurinhas - quantidadeUnicas)    # descobrindo quantas figurinhas faltam
