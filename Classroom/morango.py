@@ -22,7 +22,7 @@ for i in range(1, 2): # Incicializando coleta de valores para área 1
         break
     area1 = x * y # Calculando área total
 
-for j in range(1, 2): # Inicializando coleta de valores para a área 2
+for j in range(1, 2): # Inicializando coleta de valores para a área 2 
     x = int(input('')) # Calculando valores de dimensão e largura
     y = int(input(''))
     if x < 1 or x > 100 or y < 1 or y > 100:
